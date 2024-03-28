@@ -1,0 +1,2 @@
+export const GET_PRIORITY_SAGA = "GET_PRIORITY_SAGA";
+export const GET_PRIORITY = "GET_PRIORITY";
