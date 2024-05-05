@@ -19,7 +19,6 @@ function* loginSaga(action) {
     const { data } = yield call(() =>
       authenticationService.login(action.payload)
     );
-    console.log("data login", data);
     if (data.statusCode === STATUS_CODE.SUCCESS) {
       localStorage.setItem(USER_TOKEN, data.content.accessToken);
       const userInfo = {

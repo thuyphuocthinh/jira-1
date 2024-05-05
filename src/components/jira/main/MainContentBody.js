@@ -15,8 +15,6 @@ export default function MainContentBody(props) {
   const dispatch = useDispatch();
   const handleOnDragEnd = (result) => {
     const { destination, source } = result;
-    console.log("destination: ", destination);
-    console.log("source: ", source);
     const { projectId, taskId } = JSON.parse(result.draggableId);
     if (!destination) {
       return;
